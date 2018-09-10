@@ -1,0 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/earlyaccess/mplus1p.css');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*mas*/
+html, body {
+	font-family: 'Lato', 'Mplus 1p', sans-serif;
+}
+html {
+	width: 100%;
+}
+body {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.box {
+	box-shadow: 0 0 5px #000;
+}
+.box_hover img:hover, .box_hover div:hover {
+	box-shadow: 0 0 5px #000;
+	transition: .4s ease-out box-shadow;
+}
+.title {
+	position: absolute;
+	color: #777;
+	font-size: 12pt;
+	font-weight: 300;
+}
+
+/*header*/
+#header {
+	margin-top: 80px;
+}
+img.logo {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+}
+h1.header_title {
+	text-align: center;
+	font-size: 24pt;
+	font-weight: 300;
+}
+
+
+/*nav*/
+#nav {
+	margin-top: 10px;
+}
+#nav ul {
+	text-align: center;
+}
+#nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+#nav ul li a {
+	font-size: 12pt;
+	font-weight: 300;
+	color: #777;
+	text-decoration: none;
+}
+#nav ul li a:hover, #nav ul li a:active, #nav ul li a:focus {
+	color: #999;
+}
+
+/*about*/
+#about {
+	position: relative;
+	height: 400px;
+	padding-top: 60px;
+	max-width: 840px;
+	margin: 0 auto;
+}
+#about h2.title {
+	top: 70px;
+	right: -31px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+#about img.me {
+	position: absolute;
+	left: 0;
+	width: 20%;
+	min-width: 240px;
+	/*height: 330px;*/
+}
+#about .intro {
+	position: absolute;
+	/*overflow-y: scroll;*/
+	right: 0;
+	width: 70%;
+	max-width: 540px;
+	height: 330px;
+}
+
+#about .intro p {
+	padding: 30px 0 0 15px;
+	color: #333;
+	line-height: 16pt;
+	font-size: 14pt;
+	font-weight: 300;
+}
+#about .intro p.japanese {
+	letter-spacing: 1px;
+}
+#about .intro p.skills {
+	font-size: 12pt;
+}
+
+
+/*work*/
+#work {
+	position: relative;
+	padding-top: 80px;
+	max-width: 840px;
+	margin: 0 auto;
+}
+#work h2.title {
+	top: 86px;
+	left: -40px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+}
+#work .capture {
+	position: relative;
+	width: 260px;
+	height: 340px;
+	display: block;
+	float: left;
+	margin: 0 10px;
+	padding-bottom: 100px;
+}
+#work .capture img {
+	width: 100%;
+	height: 100%;
+}
+#work .capture p {
+	margin-top: 8px;
+	font-size: 10pt;
+	color: #777;
+}
+#work .other {
+	clear: both;
+}
+#work .other p {
+	font-size: 14pt;
+	font-weight: 100;
+	color: #777;
+}
+#work .other a {
+	display: inline-block;
+	margin: 10px 20px;
+	font-weight: 300;
+	color: #0000ff;
+	text-decoration: none;
+}
+#work .other a:hover {
+	color: #000077;
+	text-decoration: underline;
+}
+
+
+/*contact*/
+#contact {
+	position: relative;
+	max-width: 820px;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+#contact h2.title {
+	top: 70px;
+	right: -31px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+#contact a:hover img {
+	opacity: 0.8;
+	transition: .4s ease-in all;
+}
+#contact .social {
+	text-align: center;
+	margin: 0 auto;
+}
+#contact img {
+	text-align: right;
+	width: 60px;
+	display: inline-block;
+	padding: 0 10px;
+}
+
+
+/*footer*/
+#footer {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+#footer .copyright {
+	text-align: center;
+	font-size: 14pt;
+	font-weight: 300;
+}
+
+
+@media screen and (max-width: 860px) {
+	#about h2.title {
+		right: inherit;
+	}
+	#work h2.title {
+		right: 0;
+		left: inherit;
+		top: inherit;
+	}
+	#contact h2.title {
+		right: inherit;
+	}
+	#about {
+		text-align: center;
+		padding-bottom: 400px;
+	}
+	#about img.me {
+		position: relative;
+		float: none;
+	}
+	#about .intro {
+		position: relative;
+		margin: 30px auto;
+		float: none;
+	}
+	#work {
+		/*padding-top: 380px;*/
+	}
+	#work .capture {
+		margin: 0 auto;
+		padding-top: 20px;
+		float: none;
+		text-align: center;
+	}
+	#work .other {
+		padding: 30px 0;
+		text-align: center;
+	}
+}
