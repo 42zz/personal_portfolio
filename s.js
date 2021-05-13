@@ -1,8 +1,8 @@
 "use strict";
-var d = document;
-var w = window;
-var b = d.getElementById("b");
-var c = d.getElementById("c");
+var d = document,
+    w = window,
+    b = d.getElementById("b"),
+    c = d.getElementById("c");
 
 w.onload = function() {
     setTimeout(function() {
