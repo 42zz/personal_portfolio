@@ -1,14 +1,15 @@
 "use strict";
+var d = document;
+var w = window;
+var b = d.getElementById("b");
+var c = d.getElementById("c");
 
-var b = document.getElementById("b");
-var c = document.getElementById("c");
-
-window.onload = function() {
+w.onload = function() {
     setTimeout(function() {
         c.classList.add("z");
     }, 420);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+d.addEventListener("DOMContentLoaded", function() {
     c.classList.add("a");
 });
