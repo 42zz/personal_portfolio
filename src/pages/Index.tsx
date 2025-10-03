@@ -11,11 +11,11 @@ type SocialLinkData = {
 };
 
 const socialLinks: SocialLinkData[] = [
-  { platform: 'x', username: '@42zz' },
+  // { platform: 'x', username: '@42zz' },
   { platform: 'github', username: '@42zz' },
-  { platform: 'instagram', username: '@42zz' },
-  { platform: 'facebook', username: '@m42zz' },
-  { platform: 'linkedin', username: '@masayakawai' },
+  // { platform: 'instagram', username: '@42zz' },
+  // { platform: 'facebook', username: '@m42zz' },
+  // { platform: 'linkedin', username: '@masayakawai' },
 ];
 
 const Index = () => {
@@ -26,7 +26,7 @@ const Index = () => {
       <div className="w-full max-w-md mx-auto z-10">
         <ProfileCard 
           name="Masaya Kawai"
-          bio="Freelance web developer focused on frontend. Backend capable. Delivering creative and efficient web solutions."
+          bio=""
           avatarUrl="/me.jpg"
         />
         
