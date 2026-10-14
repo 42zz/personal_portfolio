@@ -140,7 +140,7 @@ export const career: CareerEntry[] = [
         ],
       },
     ],
-    skills: ['Vue.js', '要件定義', 'チーム連携'],
+    skills: ['Vue.js', '要件定義'],
   },
   {
     year: '2018',
@@ -157,7 +157,7 @@ export const career: CareerEntry[] = [
         ],
       },
     ],
-    skills: ['TypeScript', 'React', 'Next.js', 'NestJS', 'Vue', 'Nuxt', 'PHP', 'Laravel', 'WordPress', 'Shopify', 'AWS'],
+    skills: ['TypeScript', 'React', 'Next.js', 'NestJS', 'Vue.js', 'Nuxt', 'PHP', 'Laravel', 'WordPress', 'Shopify', 'AWS'],
   },
   {
     year: '2020',
@@ -184,11 +184,11 @@ export const career: CareerEntry[] = [
         lines: [
           '業務委託で、Web 開発プロジェクトのプロジェクトマネージャーとディレクターを担当。クライアントと要件を詰め、ドキュメント化する。',
           'ベトナムのオフショアチームとの橋渡し役として、ワークフローと進行の管理、技術ドキュメントや仕様書の整備を受け持つ。',
-          '上場不動産会社の自社 CRM 開発では、リードエンジニアを務める。',
+          '大手不動産会社の自社 CRM 開発では、リードエンジニアを務める。',
         ],
       },
     ],
-    skills: ['Vue.js', 'TypeScript', 'PM', 'オフショア開発', 'ドキュメント整備'],
+    skills: ['Vue.js', 'TypeScript', 'オフショア開発', 'ドキュメント整備'],
   },
   {
     year: '2022',
@@ -215,7 +215,7 @@ export const career: CareerEntry[] = [
         lines: ['会員向け Web サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
       },
     ],
-    skills: ['要件定義', '技術選定', 'Nuxt.js', 'Laravel', 'Docker'],
+    skills: ['要件定義', '技術選定', 'Nuxt', 'Laravel', 'Docker'],
   },
   {
     year: '2024',
@@ -257,7 +257,7 @@ export const career: CareerEntry[] = [
       },
       { label: '個人開発', lines: ['iPhone / Mac アプリを作り、公開している。'] },
     ],
-    skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers', 'PostgreSQL', 'Drizzle', 'Swift', 'SwiftUI'],
+    skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers', 'PostgreSQL', 'Drizzle ORM', 'Swift', 'SwiftUI'],
   },
 ];
 
