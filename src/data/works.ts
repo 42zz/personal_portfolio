@@ -159,18 +159,15 @@ export const career: CareerEntry[] = [
   {
     year: '2022',
     affiliation: '自社 A の受託案件',
-    title: '音楽系 Web サービスの受託開発',
-    description: ['アーティストやジャンルを軸にしたコミュニティ型 Web サービスの開発進行を担当。フロントエンドは Nuxt、バックエンドは Laravel で構築。'],
+    title: 'コミュニティ型 Web サービスの受託開発',
+    description: ['会員向け Web サービスの開発進行を担当。'],
     skills: ['Nuxt.js', 'Laravel', 'Docker', '開発進行'],
   },
   {
     year: '2024',
     affiliation: '自社 A の受託案件',
-    title: '経営者向け学習プラットフォームを受託開発',
-    description: [
-      '医療系の経営者向けに、動画・記事・マンガで経営ノウハウを学べる会員制オンライン学習サービスを開発。',
-      '会員登録、動画視聴、セミナー申し込み、学習履歴の管理などを実装。',
-    ],
+    title: '会員制オンライン学習サービスの受託開発',
+    description: ['動画や記事で学べる会員制の学習サービスを開発。'],
     skills: ['Next.js', 'NestJS', 'TypeScript'],
   },
   {
