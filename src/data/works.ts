@@ -115,8 +115,8 @@ export const career: CareerEntry[] = [
   {
     year: '2018',
     period: '2018〜',
-    affiliation: 'P社・取締役(共同創業)',
-    title: 'Web 制作・システム開発の会社を共同創業',
+    affiliation: '株式会社Placia・取締役(共同創業)',
+    title: '株式会社Placia を共同創業',
     description: [
       '取締役として、技術選定からインフラ構築まで開発全般を担当。',
       '外部パートナーを含む開発チームのディレクションと、経理などのバックオフィスも担う。',
@@ -147,10 +147,10 @@ export const career: CareerEntry[] = [
   {
     year: '2022',
     period: '2022〜',
-    affiliation: 'S社・取締役(共同創業)',
-    title: '輸入販売の会社を共同創業',
+    affiliation: '株式会社沁透・取締役(共同創業)',
+    title: '株式会社沁透を共同創業',
     description: [
-      '取締役として、米国からの健康食品の輸入と総代理店事業を立ち上げ。',
+      '取締役として、米国からの CBD オイルの輸入販売と総代理店事業を立ち上げ。',
       '自社 EC サイトの開発と保守、モール出店の管理、経理を担当。',
       '自由が丘の実店舗の立ち上げと運営管理にも携わる。',
     ],
@@ -158,21 +158,21 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2022',
-    affiliation: 'P社・受託案件',
+    affiliation: 'Placia・受託案件',
     title: 'コミュニティ型 Web サービスの受託開発',
     description: ['会員向け Web サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
     skills: ['要件定義', '技術選定', 'Nuxt.js', 'Laravel', 'Docker'],
   },
   {
     year: '2024',
-    affiliation: 'P社・受託案件',
+    affiliation: 'Placia・受託案件',
     title: '会員制オンライン学習サービスの受託開発',
     description: ['動画や記事で学べる会員制の学習サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
     skills: ['要件定義', '技術選定', 'Next.js', 'NestJS', 'TypeScript'],
   },
   {
     year: '2025',
-    affiliation: 'P社・自社サービス / M社・業務委託',
+    affiliation: 'Placia・自社サービス / M社・業務委託',
     title: 'AI を使った自社サービスの企画・開発',
     description: [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
@@ -183,7 +183,7 @@ export const career: CareerEntry[] = [
   {
     year: '2026',
     period: '2026〜',
-    affiliation: 'P社・自社サービス / 個人開発',
+    affiliation: 'Placia・自社サービス / 個人開発',
     title: '飲食店向けの自社サービスと、個人アプリの開発',
     description: [
       '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',

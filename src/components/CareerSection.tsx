@@ -13,9 +13,9 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
         className="mb-6 px-1"
       >
         <h2 className="text-2xl font-bold tracking-tight">Career</h2>
-        <p className="mt-1 text-sm text-muted-foreground">これまでの仕事。社名は頭文字で表記。</p>
+        <p className="mt-1 text-sm text-muted-foreground">これまでの仕事。</p>
         <p className="mt-1 text-xs leading-relaxed text-muted-foreground/80">
-          P社: 共同創業した Web 制作・システム開発会社(2018〜 取締役) / S社: 共同創業した輸入販売会社(2022〜 取締役) / そのほかは業務委託先
+          Placia: Web 制作・システム開発(2018〜 取締役) / 沁透: CBD オイルの輸入販売(2022〜 取締役) / 頭文字のみの社名は業務委託先
         </p>
       </motion.div>
 
