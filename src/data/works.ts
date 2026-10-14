@@ -6,6 +6,8 @@ export type Work = {
   description: string[];
   /** public/logos/ 配下の画像パス。未指定なら頭文字を表示 */
   logo?: string;
+  /** 対応プラットフォームなどの短いラベル */
+  platform?: string;
 };
 
 export type Section = {
@@ -16,7 +18,6 @@ export type Section = {
   works: Work[];
 };
 
-// TODO: 説明文は仮置きです。実際のサービス内容に合わせて書き換えてください。
 export const sections: Section[] = [
   {
     id: 'apps',
@@ -28,13 +29,14 @@ export const sections: Section[] = [
         id: 'inumemo',
         name: 'inumemo',
         url: 'https://inumemo.com/',
-        tagline: '愛犬との毎日を、さっと記録。',
+        tagline: '犬のことぜんぶ、ひとつの記録に。',
         description: [
-          '愛犬の食事・散歩・体調などを手軽にメモできる記録アプリです。',
-          'その日の様子を数タップで残せるので、忙しい日でも続けられます。',
-          '記録はカレンダーで振り返ることができ、通院時の共有にも役立ちます。',
+          'ごはん・お薬・トイレ・散歩など、犬のお世話をワンタップで記録できる iPhone アプリです。',
+          '家族を招待すれば、だれが・いつ・何をしたかが同じ画面で分かり、あげ忘れや二重にあげることを防げます。',
+          '散歩は GPS で道のりや距離を残せて、ウィジェットや Siri からも記録できます。',
         ],
         logo: '/logos/inumemo.png',
+        platform: 'iPhone',
       },
     ],
   },
@@ -48,21 +50,27 @@ export const sections: Section[] = [
         id: 'inkotto',
         name: 'inkotto',
         url: 'https://inkotto.42zz.net/',
-        tagline: '',
-        description: ['（説明文を入力してください）'],
+        tagline: 'しゃべって、書く。',
+        description: [
+          'キーを押しながら話すと、Mac の中の Whisper で文字にして、カーソルのある入力欄にそのまま入れる音声入力アプリです。',
+          '辞書と修正の学習、「えーと」などの言いよどみの除去で、話した言葉がそのまま使える文章になります。',
+          '標準設定では音声も文章も Mac の外へ送らず、メニューバーから履歴や辞書を扱えます。',
+        ],
         logo: '/logos/inkotto.png',
+        platform: 'macOS',
       },
       {
         id: 'gijilog',
         name: 'gijilog',
         url: 'https://gijilog.42zz.net/',
-        tagline: '会議の記録を、その場で残す。',
+        tagline: '会議を録って、根拠ごと残す。',
         description: [
-          '会議中の発言や決定事項を、時系列のログとして素早く記録できるツールです。',
-          '話しながらでも入力しやすいシンプルな画面で、議事録づくりの手間を減らします。',
-          '残したログはそのまま共有でき、あとからの振り返りにも使えます。',
+          'メニューバーに常駐し、Zoom や Teams の会議をその場で文字起こしする Mac アプリです。',
+          '相手の音声と自分のマイクを別々に聞き取り、話者ごとの文字にして、重要・決定などのマークやメモを時刻の位置に並べます。',
+          '文字起こしは Mac の中だけで動き、音声も文字も外部へ送りません。',
         ],
         logo: '/logos/gijilog.png',
+        platform: 'macOS',
       },
     ],
   },

@@ -18,7 +18,7 @@ const Index = () => {
       <main className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
         <section id="social" className="min-h-screen snap-start flex items-center justify-center px-6 py-24">
           <div className="w-full max-w-md">
-            <ProfileCard name="Masaya Kawai" bio="個人でWebアプリを作っています。" avatarUrl="/me.jpg" className="mb-6" />
+            <ProfileCard name="Masaya Kawai" bio="個人でアプリを作っています。" avatarUrl="/me.jpg" className="mb-6" />
             <motion.div
               className="flex justify-center gap-3"
               initial={{ opacity: 0, y: 16 }}

@@ -10,7 +10,14 @@ const WorkCard: React.FC<{ work: Work }> = ({ work }) => {
       <div className="flex items-center gap-4">
         <AppLogo name={work.name} src={work.logo} />
         <div className="min-w-0">
-          <h3 className="text-xl font-bold tracking-tight">{work.name}</h3>
+          <div className="flex items-center gap-2">
+            <h3 className="text-xl font-bold tracking-tight">{work.name}</h3>
+            {work.platform && (
+              <span className="rounded-full bg-secondary px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
+                {work.platform}
+              </span>
+            )}
+          </div>
           {work.tagline && <p className="mt-0.5 text-sm text-muted-foreground">{work.tagline}</p>}
         </div>
       </div>
