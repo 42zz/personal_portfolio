@@ -18,6 +18,10 @@ export type WorkGroup = {
 
 export type CareerEntry = {
   year: string;
+  /** 「2018〜」「2021〜2023」のような期間表示。未指定なら year を表示 */
+  period?: string;
+  /** どの立場での仕事か(自社 / 業務委託 / フリーランス / 個人開発 など) */
+  affiliation: string;
   title: string;
   description: string[];
   skills?: string[];
@@ -80,12 +84,16 @@ export const workGroups: WorkGroup[] = [
 export const career: CareerEntry[] = [
   {
     year: '2013',
+    period: '2013〜',
+    affiliation: 'フリーランス',
     title: 'フリーランスとして Web 制作を始める',
     description: ['大学在学中に、Web サイトのコーディングと WordPress のテーマ開発を受託。'],
     skills: ['HTML/CSS', 'JavaScript', 'PHP', 'WordPress'],
   },
   {
     year: '2016',
+    period: '2016〜2017',
+    affiliation: 'フリーランス',
     title: 'オーストラリアへ',
     description: [
       'メルボルン、ブリスベン、シドニー、アデレードと東海岸を中心に拠点を移しながら、フリーランスの Web エンジニアとして活動。',
@@ -96,6 +104,7 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2017',
+    affiliation: '業務委託',
     title: 'SNS サービスの開発責任者',
     description: [
       '帰国後、新規 SNS サービスの開発に開発責任者として参画。',
@@ -105,6 +114,8 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2018',
+    period: '2018〜',
+    affiliation: '自社 A ・ 取締役',
     title: 'Web 制作・システム開発の会社を共同創業',
     description: [
       '取締役として、技術選定からインフラ構築まで開発全般を担当。',
@@ -115,12 +126,16 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2020',
+    period: '2020〜2022',
+    affiliation: '業務委託',
     title: 'Web 制作会社のテクニカルディレクター',
     description: ['業務委託で、WordPress テーマの開発と、海外の開発者と代表の間のやりとりを担当。'],
     skills: ['WordPress', 'English'],
   },
   {
     year: '2021',
+    period: '2021〜2023',
+    affiliation: '業務委託',
     title: 'システム開発会社のテクニカルディレクター',
     description: [
       '業務委託で、Web 開発プロジェクトのプロジェクトマネージャーとディレクターを担当。',
@@ -131,6 +146,8 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2022',
+    period: '2022〜',
+    affiliation: '自社 B ・ 取締役',
     title: '輸入販売の会社を共同創業',
     description: [
       '取締役として、米国からの健康食品の輸入と総代理店事業を立ち上げ。',
@@ -141,12 +158,14 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2022',
+    affiliation: '自社 A の受託案件',
     title: '音楽系 Web サービスの受託開発',
     description: ['アーティストやジャンルを軸にしたコミュニティ型 Web サービスの開発進行を担当。フロントエンドは Nuxt、バックエンドは Laravel で構築。'],
     skills: ['Nuxt.js', 'Laravel', 'Docker', '開発進行'],
   },
   {
     year: '2024',
+    affiliation: '自社 A の受託案件',
     title: '経営者向け学習プラットフォームを受託開発',
     description: [
       '医療系の経営者向けに、動画・記事・マンガで経営ノウハウを学べる会員制オンライン学習サービスを開発。',
@@ -156,6 +175,7 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2025',
+    affiliation: '自社 A ・ 業務委託',
     title: 'AI を使った自社サービスの企画・開発',
     description: [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
@@ -165,6 +185,8 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2026',
+    period: '2026〜',
+    affiliation: '自社 A ・ 個人開発',
     title: '飲食店向けの自社サービスと、個人アプリの開発',
     description: [
       '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',
