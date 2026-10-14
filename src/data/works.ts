@@ -140,22 +140,22 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2025',
-    title: 'AI を使った自社サービスと、個人アプリの開発',
+    title: 'AI を使った自社サービスの企画・開発',
     description: [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
-      '海外企業の社内プロジェクト管理ツールの制作開発にも、英語でのやりとりで参画。',
-      '個人でも iPhone / Mac アプリ(inumemo・inkotto・gijilog)を作り、公開している。',
+      'ブートキャンプ形式の人材育成を手がけるグローバルな組織開発コンサルティング会社で、社内プロジェクト管理ツールの開発に参画。英語環境のチームで進行。',
     ],
-    skills: ['Next.js', 'Supabase', 'Stripe', 'LLM', 'Swift', 'SwiftUI', 'Cloudflare Workers', 'English'],
+    skills: ['Next.js', 'Supabase', 'Stripe', 'LLM', 'English'],
   },
   {
     year: '2026',
-    title: '飲食店向けの自社サービスを企画・開発',
+    title: '飲食店向けの自社サービスと、個人アプリの開発',
     description: [
       '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',
       'QR コードを起点に、アンケートとクーポンで来店を促す店舗向けの販促の仕組みも開発中。',
+      '個人でも iPhone / Mac アプリを作り、公開している。',
     ],
-    skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers', 'PostgreSQL', 'Drizzle'],
+    skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers', 'PostgreSQL', 'Drizzle', 'Swift', 'SwiftUI'],
   },
 ];
 
