@@ -143,9 +143,10 @@ export const career: CareerEntry[] = [
     title: 'AI を使った自社サービスと、個人アプリの開発',
     description: [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
+      '海外企業の社内プロジェクト管理ツールの制作開発にも、英語でのやりとりで参画。',
       '個人でも iPhone / Mac アプリ(inumemo・inkotto・gijilog)を作り、公開している。',
     ],
-    skills: ['Next.js', 'Supabase', 'Stripe', 'LLM', 'Swift', 'SwiftUI', 'Cloudflare Workers'],
+    skills: ['Next.js', 'Supabase', 'Stripe', 'LLM', 'Swift', 'SwiftUI', 'Cloudflare Workers', 'English'],
   },
   {
     year: '2026',
