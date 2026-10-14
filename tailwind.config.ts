@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'Noto Sans JP', 'system-ui', 'sans-serif'],
+				sans: ['Inter', 'BIZ UDPGothic', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
