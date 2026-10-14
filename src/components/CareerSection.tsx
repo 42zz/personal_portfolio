@@ -35,14 +35,16 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
             <time className="text-xs font-semibold tracking-wider text-muted-foreground">{e.period ?? e.year}</time>
             <div className="mt-1.5 rounded-2xl glass-card p-4">
               <h3 className="text-[15px] font-semibold leading-snug tracking-tight">{e.title}</h3>
-              <div className="mt-3 space-y-3">
+              <div className="mt-3 space-y-4">
                 {e.roles.map((r) => (
-                  <div key={r.label}>
-                    <p className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground">
-                      <span aria-hidden="true" className="h-1 w-1 shrink-0 rounded-full bg-muted-foreground/60" />
-                      {r.label}
+                  <div key={`${r.org}-${r.position ?? ''}`}>
+                    <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span className="rounded-md bg-foreground px-2 py-0.5 text-[11px] font-semibold leading-5 text-background">
+                        {r.org}
+                      </span>
+                      {r.position && <span className="text-[13px] font-bold">{r.position}</span>}
                     </p>
-                    <div className="mt-1 space-y-1 text-sm leading-relaxed text-foreground/80">
+                    <div className="mt-1.5 space-y-1 text-sm leading-relaxed text-foreground/80">
                       {r.lines.map((line, j) => (
                         <p key={j}>{line}</p>
                       ))}

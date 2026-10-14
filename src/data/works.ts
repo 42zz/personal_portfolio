@@ -17,8 +17,10 @@ export type WorkGroup = {
 };
 
 export type CareerRole = {
-  /** 所属と肩書(例: 株式会社Placia・取締役) */
-  label: string;
+  /** 所属(例: 株式会社Placia)。フリーランスなど所属がない場合は肩書をここに書く */
+  org: string;
+  /** 肩書(例: 取締役) */
+  position?: string;
   /** その肩書での担当内容 */
   lines: string[];
 };
@@ -93,7 +95,7 @@ export const career: CareerEntry[] = [
     title: 'フリーランスとして Web 制作を始める',
     roles: [
       {
-        label: 'フリーランス',
+        org: 'フリーランス',
         lines: [
           '大学在学中に、Web サイトのコーディングと WordPress のテーマ開発を受託。',
           'その後も 2022 年まで、サイト制作のほか、技術面のディレクションやプロジェクト管理、SNS 分析レポートの作成、日英の翻訳・通訳を請け負う。',
@@ -108,18 +110,18 @@ export const career: CareerEntry[] = [
     title: 'オーストラリアへ',
     roles: [
       {
-        label: 'フリーランス',
+        org: 'フリーランス',
         lines: ['メルボルン、ブリスベン、シドニー、アデレードと東海岸を中心に拠点を移しながら、Web エンジニアとして活動。'],
       },
       {
-        label: 'SM社・デジタルコンテンツマネージャー',
+        org: 'SM社', position: 'デジタルコンテンツマネージャー',
         lines: [
           '現地の音楽レーベルで、Web とデジタルプラットフォームのコンテンツ管理を担当。所属アーティストとエージェンシーのサイトを構築。',
           '現地プロデューサーと日本人アーティストの間の通訳・翻訳も担う。',
         ],
       },
       {
-        label: 'K社・Web ディレクター',
+        org: 'K社', position: 'Web ディレクター',
         lines: [
           '日本人クリエイターがデザインする漢字 T シャツブランドの立ち上げに参画し、海外向け EC サイトを WooCommerce で構築・運用。',
           'ブランド戦略、在庫管理の仕組みづくり、チーム運営とバックオフィスも担当。',
@@ -133,7 +135,7 @@ export const career: CareerEntry[] = [
     title: 'SNS サービスの開発責任者',
     roles: [
       {
-        label: '開発責任者',
+        org: '開発責任者',
         lines: [
           '帰国後、新規 SNS サービスの開発に開発責任者として参画。',
           '機能の要件定義などの上流工程から、デザイナーやバックエンドエンジニアとの連携、フロントエンドの実装までを担当。',
@@ -148,7 +150,7 @@ export const career: CareerEntry[] = [
     title: '株式会社Placia を共同創業',
     roles: [
       {
-        label: '株式会社Placia・取締役',
+        org: '株式会社Placia', position: '取締役',
         lines: [
           '取締役として社内業務と Web 開発を統括。クライアントの要件をもとに Web プロジェクトの定義・開発・公開を行う。',
           '外部パートナーを含むチームのマネジメントと社内のコミュニケーション、仕様書や技術ドキュメントの作成を担当。',
@@ -165,7 +167,7 @@ export const career: CareerEntry[] = [
     title: 'Web 制作会社のテクニカルディレクター',
     roles: [
       {
-        label: 'B社・テクニカルディレクター',
+        org: 'B社', position: 'テクニカルディレクター',
         lines: [
           '業務委託で、WordPress を中心とした Web 制作案件の開発を担当。',
           '技術面のディレクションと助言、海外の開発者と経営層の間のコミュニケーションを担う。',
@@ -180,7 +182,7 @@ export const career: CareerEntry[] = [
     title: 'システム開発会社のテクニカルディレクター',
     roles: [
       {
-        label: 'N社・テクニカルディレクター',
+        org: 'N社', position: 'テクニカルディレクター',
         lines: [
           '業務委託で、Web 開発プロジェクトのプロジェクトマネージャーとディレクターを担当。クライアントと要件を詰め、ドキュメント化する。',
           'ベトナムのオフショアチームとの橋渡し役として、ワークフローと進行の管理、技術ドキュメントや仕様書の整備を受け持つ。',
@@ -196,7 +198,7 @@ export const career: CareerEntry[] = [
     title: '株式会社沁透を共同創業',
     roles: [
       {
-        label: '株式会社沁透・取締役',
+        org: '株式会社沁透', position: '取締役',
         lines: [
           '米国からの CBD オイルの輸入販売と総代理店事業を立ち上げ。輸入業務と関連書類の管理を担当。',
           'Shopify による自社 EC サイトの構築と運用、モール出店の管理、経理や文書管理などのバックオフィスを担う。',
@@ -211,7 +213,7 @@ export const career: CareerEntry[] = [
     title: 'コミュニティ型 Web サービスの受託開発',
     roles: [
       {
-        label: 'Placia・受託案件',
+        org: 'Placia', position: '受託案件',
         lines: ['会員向け Web サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
       },
     ],
@@ -222,7 +224,7 @@ export const career: CareerEntry[] = [
     title: '会員制オンライン学習サービスの受託開発',
     roles: [
       {
-        label: 'Placia・受託案件',
+        org: 'Placia', position: '受託案件',
         lines: ['動画や記事で学べる会員制の学習サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
       },
     ],
@@ -233,11 +235,11 @@ export const career: CareerEntry[] = [
     title: 'AI を使った自社サービスの企画・開発',
     roles: [
       {
-        label: 'Placia・自社サービス',
+        org: 'Placia', position: '自社サービス',
         lines: ['小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。'],
       },
       {
-        label: 'M社・エンジニア',
+        org: 'M社', position: 'エンジニア',
         lines: ['海外の組織開発コンサルティング会社で、社内プロジェクト管理ツールの開発に参画。'],
       },
     ],
@@ -249,13 +251,13 @@ export const career: CareerEntry[] = [
     title: '飲食店向けの自社サービスと、個人アプリの開発',
     roles: [
       {
-        label: 'Placia・自社サービス',
+        org: 'Placia', position: '自社サービス',
         lines: [
           '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',
           'QR コードを起点に、アンケートとクーポンで来店を促す店舗向けの販促の仕組みも開発中。',
         ],
       },
-      { label: '個人開発', lines: ['iPhone / Mac アプリを作り、公開している。'] },
+      { org: '個人開発', lines: ['iPhone / Mac アプリを作り、公開している。'] },
     ],
     skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers', 'PostgreSQL', 'Drizzle ORM', 'Swift', 'SwiftUI'],
   },
