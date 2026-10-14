@@ -37,9 +37,10 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
                   <p key={j}>{line}</p>
                 ))}
               </div>
-              {e.tags && e.tags.length > 0 && (
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {e.tags.map((t) => (
+              {e.skills && e.skills.length > 0 && (
+                <div className="mt-3 flex flex-wrap items-center gap-1.5">
+                  <span className="mr-1 text-[11px] font-semibold tracking-wider text-muted-foreground/70">SKILLS</span>
+                  {e.skills.map((t) => (
                     <span key={t} className="rounded-full bg-secondary px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
                       {t}
                     </span>

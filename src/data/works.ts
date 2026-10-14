@@ -20,7 +20,7 @@ export type CareerEntry = {
   year: string;
   title: string;
   description: string[];
-  tags?: string[];
+  skills?: string[];
 };
 
 export const workGroups: WorkGroup[] = [
@@ -82,23 +82,26 @@ export const career: CareerEntry[] = [
     year: '2013',
     title: 'フリーランスとして Web 制作を始める',
     description: ['大学在学中に、Web サイトのコーディングと WordPress のテーマ開発を受託。'],
-    tags: ['HTML/CSS', 'JavaScript', 'PHP', 'WordPress'],
+    skills: ['HTML/CSS', 'JavaScript', 'PHP', 'WordPress'],
   },
   {
     year: '2016',
     title: 'オーストラリアへ',
     description: [
-      'メルボルンに拠点を移し、フリーランスの Web エンジニアとして活動。',
+      'メルボルン、ブリスベン、シドニー、アデレードと東海岸を中心に拠点を移しながら、フリーランスの Web エンジニアとして活動。',
       '現地の音楽レーベルで、所属アーティスト向けの CMS とサイトテンプレートを開発。日英の通訳と翻訳も担当。',
       '現地で立ち上がった日本語 T シャツブランドに参画し、EC サイトの構築と運営、バックオフィスを担当。',
     ],
-    tags: ['PHP', 'CodeIgniter', 'WordPress', 'WooCommerce'],
+    skills: ['PHP', 'CodeIgniter', 'WordPress', 'WooCommerce', 'English'],
   },
   {
     year: '2017',
-    title: 'SNS サービスの開発',
-    description: ['帰国後、新規 SNS サービスの開発に参画。フロントエンドを担当。'],
-    tags: ['Vue.js'],
+    title: 'SNS サービスの開発責任者',
+    description: [
+      '帰国後、新規 SNS サービスの開発に開発責任者として参画。',
+      '機能の要件定義などの上流工程から、デザイナーやバックエンドエンジニアとの連携、フロントエンドの実装までを担当。',
+    ],
+    skills: ['Vue.js', '要件定義', 'チーム連携'],
   },
   {
     year: '2018',
@@ -107,23 +110,23 @@ export const career: CareerEntry[] = [
       '取締役として、技術選定からインフラ構築まで開発全般を担当。',
       '外部パートナーを含む開発チームのディレクションと、経理などのバックオフィスも担う。',
     ],
-    tags: ['React', 'Next.js', 'Vue', 'Nuxt', 'Node.js', 'Python', 'AWS'],
+    skills: ['React', 'Next.js', 'Vue', 'Nuxt', 'Node.js', 'Python', 'AWS'],
   },
   {
     year: '2020',
     title: 'Web 制作会社のテクニカルディレクター',
     description: ['業務委託で、WordPress テーマの開発と、海外の開発者と代表の間のやりとりを担当。'],
-    tags: ['WordPress', 'English'],
+    skills: ['WordPress', 'English'],
   },
   {
     year: '2021',
     title: 'システム開発会社のテクニカルディレクター',
     description: [
       '業務委託で、Web 開発プロジェクトのプロジェクトマネージャーとディレクターを担当。',
-      'ベトナムのオフショアチームとの橋渡し役として、要件の整理から進行管理までを受け持つ。',
+      'ベトナムのオフショアチームとの橋渡し役として、要件の整理から進行管理、開発ドキュメントや仕様書の整備までを受け持つ。',
       '上場不動産会社の自社 CRM 開発では、リードエンジニアを務める。',
     ],
-    tags: ['PM', 'オフショア開発', 'CRM', 'TypeScript'],
+    skills: ['Vue.js', 'TypeScript', 'PM', 'オフショア開発', 'ドキュメント整備'],
   },
   {
     year: '2022',
@@ -133,25 +136,25 @@ export const career: CareerEntry[] = [
       '自社 EC サイトの開発と保守、モール出店の管理、経理を担当。',
       '自由が丘の実店舗の立ち上げと運営管理にも携わる。',
     ],
-    tags: ['EC', '輸入業務', '店舗運営'],
+    skills: ['EC', '輸入業務', '店舗運営'],
   },
   {
     year: '2025',
-    title: 'AI を使ったサービスと、個人アプリの開発',
+    title: 'AI を使った自社サービスと、個人アプリの開発',
     description: [
-      'AI を使った自社サービスの企画と開発に取り組む。',
+      '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
       '個人でも iPhone / Mac アプリ(inumemo・inkotto・gijilog)を作り、公開している。',
     ],
-    tags: ['Swift', 'SwiftUI', 'Cloudflare Workers', 'AI'],
+    skills: ['Next.js', 'Supabase', 'Stripe', 'LLM', 'Swift', 'SwiftUI', 'Cloudflare Workers'],
   },
   {
     year: '2026',
     title: '飲食店向けの自社サービスを企画・開発',
     description: [
-      '飲食店の集客を支える自社サービスの企画と開発に取り組む。',
-      '店舗の Web サイトを手間なく用意できる仕組みと、来店のきっかけをつくる販促の仕組みを準備中。',
+      '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',
+      'QR コードを起点に、アンケートとクーポンで来店を促す店舗向けの販促の仕組みも開発中。',
     ],
-    tags: ['Next.js', 'Cloudflare', 'AI'],
+    skills: ['React', 'TypeScript', 'Hono', 'Cloudflare Workers', 'PostgreSQL', 'Drizzle'],
   },
 ];
 
