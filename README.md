@@ -8,12 +8,10 @@ bun run dev
 
 ## デプロイ
 
-Cloudflare Workers(静的アセット配信)で公開しています。`master` に push すると GitHub Actions(`.github/workflows/deploy.yml`)がビルドしてデプロイします。
+Cloudflare Workers(静的アセット配信)で公開しています。`master` に push すると Cloudflare の Workers Builds が `bun install --frozen-lockfile` → `bun run build` を実行してデプロイします。
 
-必要な GitHub Secrets:
-
-- `CLOUDFLARE_API_TOKEN`(権限: Workers Scripts の編集)
-- `CLOUDFLARE_ACCOUNT_ID`
+- ビルド環境の bun は `package.json` の `packageManager` と `.bun-version` で固定しています
+- 依存を変えたら `bun install` で `bun.lock` を更新してコミットしてください
 
 手元からデプロイする場合:
 
