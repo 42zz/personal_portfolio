@@ -153,7 +153,7 @@ export type Social = {
 };
 
 export const socials: Social[] = [
-  { platform: 'x', url: 'https://x.com/42zz', note: '開発のつぶやき・お知らせ' },
-  { platform: 'github', url: 'https://github.com/42zz', note: 'ソースコード' },
+  { platform: 'x', url: 'https://x.com/42zz' },
+  { platform: 'github', url: 'https://github.com/42zz' },
   { platform: 'facebook', url: 'https://facebook.com/m42zz' },
 ];
