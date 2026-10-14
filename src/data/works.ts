@@ -178,7 +178,7 @@ export const career: CareerEntry[] = [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
       '海外の組織開発コンサルティング会社で、社内プロジェクト管理ツールの開発に参画。',
     ],
-    skills: ['Next.js', 'Supabase', 'Stripe', 'LLM', 'English'],
+    skills: ['Next.js', 'Supabase', 'Stripe', 'English'],
   },
   {
     year: '2026',
