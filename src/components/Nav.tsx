@@ -10,14 +10,14 @@ const Nav: React.FC<{ items: NavItem[] }> = ({ items }) => {
     const sections = items
       .map((i) => document.getElementById(i.id))
       .filter((el): el is HTMLElement => !!el);
+    // 画面の中央付近(上から45%の位置)を横切っているセクションをアクティブにする。
+    // 画面より長いセクションでも正しく判定できる。
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActive(visible.target.id);
+        const hit = entries.find((e) => e.isIntersecting);
+        if (hit) setActive(hit.target.id);
       },
-      { threshold: [0.5] },
+      { root: document.querySelector('main'), rootMargin: '-45% 0px -55% 0px', threshold: 0 },
     );
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
