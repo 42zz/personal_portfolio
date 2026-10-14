@@ -10,35 +10,26 @@ const XIcon: React.FC<{ className?: string }> = ({ className }) => (
 );
 
 const configs = {
-  x: {
-    label: 'X',
-    icon: <XIcon className="h-4 w-4" />,
-    url: (u: string) => `https://x.com/${u}`,
-  },
-  github: {
-    label: 'GitHub',
-    icon: <Github className="h-4 w-4" />,
-    url: (u: string) => `https://github.com/${u}`,
-  },
+  x: { label: 'X', icon: <XIcon className="h-4 w-4" /> },
+  github: { label: 'GitHub', icon: <Github className="h-4 w-4" /> },
 } as const;
 
 const SocialLink: React.FC<{ social: Social; className?: string }> = ({ social, className }) => {
   const c = configs[social.platform];
   return (
     <a
-      href={c.url(social.username)}
+      href={social.url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`${c.label} @${social.username}`}
+      aria-label={c.label}
       className={cn(
-        'inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium',
+        'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium',
         'glass-card transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-md',
         className,
       )}
     >
       {c.icon}
       <span>{c.label}</span>
-      <span className="text-xs opacity-60">@{social.username}</span>
     </a>
   );
 };
