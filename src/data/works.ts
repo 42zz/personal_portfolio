@@ -147,10 +147,10 @@ export const career: CareerEntry[] = [
   {
     year: '2018',
     period: '2018〜',
-    title: 'Placiaを共同創業',
+    title: '株式会社Placiaを共同創業',
     roles: [
       {
-        org: 'Placia', position: '取締役',
+        org: '株式会社Placia', position: '取締役',
         lines: [
           '取締役として社内業務とWeb開発を統括。クライアントの要件をもとにWebプロジェクトの定義・開発・公開を行う。',
           '外部パートナーを含むチームのマネジメントと社内のコミュニケーション、仕様書や技術ドキュメントの作成を担当。',
@@ -195,10 +195,10 @@ export const career: CareerEntry[] = [
   {
     year: '2022',
     period: '2022〜',
-    title: '沁透を共同創業',
+    title: '株式会社沁透を共同創業',
     roles: [
       {
-        org: '沁透', position: '取締役',
+        org: '株式会社沁透', position: '取締役',
         lines: [
           '米国からのCBDオイルの輸入販売と総代理店事業を立ち上げ。輸入業務と関連書類の管理を担当。',
           'Shopifyによる自社ECサイトの構築と運用、モール出店の管理、経理や文書管理などのバックオフィスを担う。',
@@ -213,7 +213,7 @@ export const career: CareerEntry[] = [
     title: 'コミュニティ型Webサービスの受託開発',
     roles: [
       {
-        org: 'Placia', position: '受託案件',
+        org: '株式会社Placia', position: '受託案件',
         lines: ['会員向けWebサービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
       },
     ],
@@ -224,7 +224,7 @@ export const career: CareerEntry[] = [
     title: '会員制オンライン学習サービスの受託開発',
     roles: [
       {
-        org: 'Placia', position: '受託案件',
+        org: '株式会社Placia', position: '受託案件',
         lines: ['動画や記事で学べる会員制の学習サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
       },
     ],
@@ -235,7 +235,7 @@ export const career: CareerEntry[] = [
     title: 'AIを使った自社サービスの企画・開発',
     roles: [
       {
-        org: 'Placia', position: '自社サービス',
+        org: '株式会社Placia', position: '自社サービス',
         lines: ['小規模事業者向けに、入力した事業情報からAIがマーケティング分析レポートを作るサービスを企画・開発。'],
       },
       {
@@ -251,7 +251,7 @@ export const career: CareerEntry[] = [
     title: '飲食店向けの自社サービスと、個人アプリの開発',
     roles: [
       {
-        org: 'Placia', position: '自社サービス',
+        org: '株式会社Placia', position: '自社サービス',
         lines: [
           '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',
           'QRコードを起点に、アンケートとクーポンで来店を促す店舗向けの販促の仕組みも開発中。',
