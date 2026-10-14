@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github } from 'lucide-react';
+import { ArrowUpRight, Facebook, Github } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { Social } from '@/data/works';
 
@@ -10,8 +10,9 @@ const XIcon: React.FC<{ className?: string }> = ({ className }) => (
 );
 
 const configs = {
-  x: { label: 'X', icon: <XIcon className="h-4 w-4" /> },
-  github: { label: 'GitHub', icon: <Github className="h-4 w-4" /> },
+  x: { label: 'X', icon: <XIcon className="h-5 w-5" /> },
+  github: { label: 'GitHub', icon: <Github className="h-5 w-5" /> },
+  facebook: { label: 'Facebook', icon: <Facebook className="h-5 w-5" /> },
 } as const;
 
 const SocialLink: React.FC<{ social: Social; className?: string }> = ({ social, className }) => {
@@ -21,15 +22,22 @@ const SocialLink: React.FC<{ social: Social; className?: string }> = ({ social, 
       href={social.url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={c.label}
       className={cn(
-        'inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium',
-        'glass-card transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-md',
+        'group flex w-full items-center justify-between rounded-2xl glass-card px-5 py-4',
+        'transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:bg-white/80',
         className,
       )}
     >
-      {c.icon}
-      <span>{c.label}</span>
+      <div className="flex items-center gap-4">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground text-background">
+          {c.icon}
+        </div>
+        <div className="flex flex-col">
+          <span className="text-sm font-semibold">{c.label}</span>
+          {social.note && <span className="text-xs text-muted-foreground">{social.note}</span>}
+        </div>
+      </div>
+      <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
     </a>
   );
 };

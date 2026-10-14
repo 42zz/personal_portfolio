@@ -10,18 +10,22 @@ export type Work = {
   platform?: string;
 };
 
-export type Section = {
-  id: string;
-  label: string;
+export type WorkGroup = {
   title: string;
   lead: string;
   works: Work[];
 };
 
-export const sections: Section[] = [
+export type Project = {
+  name: string;
+  period: string;
+  role: string;
+  description: string;
+  url?: string;
+};
+
+export const workGroups: WorkGroup[] = [
   {
-    id: 'apps',
-    label: 'Apps',
     title: 'Apps',
     lead: '自作のアプリやツールを公開しています。',
     works: [
@@ -41,8 +45,6 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 'prototypes',
-    label: 'Prototypes',
     title: 'Prototypes',
     lead: '試作中のものを公開しています。',
     works: [
@@ -76,12 +78,37 @@ export const sections: Section[] = [
   },
 ];
 
+// TODO: 過去の実績は仮のエントリです。実際の内容に書き換えてください。
+export const projects: Project[] = [
+  {
+    name: 'プロジェクト名',
+    period: '2024',
+    role: '企画・設計・開発',
+    description: 'どんな課題に対して、何を作り、どんな成果があったかを1〜2文で。',
+  },
+  {
+    name: 'プロジェクト名',
+    period: '2023',
+    role: 'フロントエンド開発',
+    description: 'どんな課題に対して、何を作り、どんな成果があったかを1〜2文で。',
+    url: 'https://example.com/',
+  },
+  {
+    name: 'プロジェクト名',
+    period: '2022',
+    role: '開発',
+    description: 'どんな課題に対して、何を作り、どんな成果があったかを1〜2文で。',
+  },
+];
+
 export type Social = {
-  platform: 'x' | 'github';
+  platform: 'x' | 'github' | 'facebook';
   url: string;
+  note?: string;
 };
 
 export const socials: Social[] = [
-  { platform: 'x', url: 'https://x.com/42zz' },
-  { platform: 'github', url: 'https://github.com/42zz' },
+  { platform: 'x', url: 'https://x.com/42zz', note: '開発のつぶやき・お知らせ' },
+  { platform: 'github', url: 'https://github.com/42zz', note: 'ソースコード' },
+  { platform: 'facebook', url: 'https://facebook.com/m42zz' },
 ];
