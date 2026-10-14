@@ -93,7 +93,7 @@ export const career: CareerEntry[] = [
   {
     year: '2016',
     period: '2016〜2017',
-    affiliation: 'フリーランス / SM社・業務委託 / SJ社・ディレクター',
+    affiliation: 'フリーランス / SM社・デジタルコンテンツマネージャー / SJ社・ディレクター',
     title: 'オーストラリアへ',
     description: [
       'メルボルン、ブリスベン、シドニー、アデレードと東海岸を中心に拠点を移しながら、フリーランスの Web エンジニアとして活動。',
@@ -104,7 +104,7 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2017',
-    affiliation: '業務委託・開発責任者',
+    affiliation: '開発責任者',
     title: 'SNS サービスの開発責任者',
     description: [
       '帰国後、新規 SNS サービスの開発に開発責任者として参画。',
@@ -115,7 +115,7 @@ export const career: CareerEntry[] = [
   {
     year: '2018',
     period: '2018〜',
-    affiliation: '株式会社Placia・取締役(共同創業)',
+    affiliation: '株式会社Placia・取締役',
     title: '株式会社Placia を共同創業',
     description: [
       '取締役として、技術選定からインフラ構築まで開発全般を担当。',
@@ -127,7 +127,7 @@ export const career: CareerEntry[] = [
   {
     year: '2020',
     period: '2020〜2022',
-    affiliation: 'B社・業務委託',
+    affiliation: 'B社・テクニカルディレクター',
     title: 'Web 制作会社のテクニカルディレクター',
     description: ['業務委託で、WordPress テーマの開発と、海外の開発者と代表の間のやりとりを担当。'],
     skills: ['WordPress', 'English'],
@@ -135,7 +135,7 @@ export const career: CareerEntry[] = [
   {
     year: '2021',
     period: '2021〜2023',
-    affiliation: 'N社・業務委託',
+    affiliation: 'N社・テクニカルディレクター',
     title: 'システム開発会社のテクニカルディレクター',
     description: [
       '業務委託で、Web 開発プロジェクトのプロジェクトマネージャーとディレクターを担当。',
@@ -147,7 +147,7 @@ export const career: CareerEntry[] = [
   {
     year: '2022',
     period: '2022〜',
-    affiliation: '株式会社沁透・取締役(共同創業)',
+    affiliation: '株式会社沁透・取締役',
     title: '株式会社沁透を共同創業',
     description: [
       '取締役として、米国からの CBD オイルの輸入販売と総代理店事業を立ち上げ。',
@@ -172,7 +172,7 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2025',
-    affiliation: 'Placia・自社サービス / M社・業務委託',
+    affiliation: 'Placia・自社サービス / M社・エンジニア',
     title: 'AI を使った自社サービスの企画・開発',
     description: [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
