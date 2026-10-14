@@ -160,7 +160,7 @@ export const career: CareerEntry[] = [
     year: '2022',
     affiliation: '自社 A の受託案件',
     title: 'コミュニティ型 Web サービスの受託開発',
-    description: ['会員向け Web サービスを、唯一の技術者として要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
+    description: ['会員向け Web サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
     skills: ['要件定義', '技術選定', 'Nuxt.js', 'Laravel', 'Docker'],
   },
   {
