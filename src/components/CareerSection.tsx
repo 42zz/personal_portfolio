@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import type { CareerEntry } from '@/data/works';
 
 const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, entries }) => (
-  <section id={id} className="min-h-screen snap-start flex items-center justify-center px-5 py-24">
+  <section id={id} className="min-h-screen flex items-center justify-center px-5 py-24">
     <div className="w-full max-w-md">
       <motion.div
         initial={{ opacity: 0, y: 16 }}

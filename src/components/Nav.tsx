@@ -15,9 +15,16 @@ const Nav: React.FC<{ items: NavItem[] }> = ({ items }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         const hit = entries.find((e) => e.isIntersecting);
-        if (hit) setActive(hit.target.id);
+        if (!hit) return;
+        const id = hit.target.id;
+        setActive(id);
+        // スクロールに合わせて URL のハッシュも更新する(履歴は増やさない)
+        const next = id === items[0]?.id ? window.location.pathname + window.location.search : `#${id}`;
+        if (window.location.hash !== (id === items[0]?.id ? '' : `#${id}`)) {
+          window.history.replaceState(null, '', next);
+        }
       },
-      { root: document.querySelector('main'), rootMargin: '-45% 0px -55% 0px', threshold: 0 },
+      { rootMargin: '-45% 0px -55% 0px', threshold: 0 },
     );
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
