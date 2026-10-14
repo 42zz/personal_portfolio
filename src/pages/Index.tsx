@@ -5,9 +5,9 @@ import SocialLink from '@/components/SocialLink';
 import WorkSection from '@/components/WorkSection';
 import Nav from '@/components/Nav';
 import AnimatedBackground from '@/components/AnimatedBackground';
-import { works, socials } from '@/data/works';
+import { sections, socials } from '@/data/works';
 
-const navItems = [{ id: 'home', label: 'Home' }, ...works.map((w) => ({ id: w.id, label: w.name }))];
+const navItems = [{ id: 'social', label: 'Social' }, ...sections.map((s) => ({ id: s.id, label: s.label }))];
 
 const Index = () => {
   return (
@@ -16,7 +16,7 @@ const Index = () => {
       <Nav items={navItems} />
 
       <main className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
-        <section id="home" className="min-h-screen snap-start flex items-center justify-center px-6 py-24">
+        <section id="social" className="min-h-screen snap-start flex items-center justify-center px-6 py-24">
           <div className="w-full max-w-md">
             <ProfileCard name="Masaya Kawai" bio="個人でWebアプリを作っています。" avatarUrl="/me.jpg" className="mb-6" />
             <motion.div
@@ -32,8 +32,8 @@ const Index = () => {
           </div>
         </section>
 
-        {works.map((w) => (
-          <WorkSection key={w.id} work={w} />
+        {sections.map((s) => (
+          <WorkSection key={s.id} section={s} />
         ))}
 
         <footer className="snap-end py-6 text-center text-xs text-muted-foreground">
