@@ -109,8 +109,9 @@ export const career: CareerEntry[] = [
     description: [
       '取締役として、技術選定からインフラ構築まで開発全般を担当。',
       '外部パートナーを含む開発チームのディレクションと、経理などのバックオフィスも担う。',
+      'Web 制作では、WordPress サイトの制作と開発進行を 2025 年まで継続して担当。',
     ],
-    skills: ['React', 'Next.js', 'Vue', 'Nuxt', 'Node.js', 'Python', 'AWS'],
+    skills: ['React', 'Next.js', 'Vue', 'Nuxt', 'Node.js', 'Python', 'AWS', 'WordPress'],
   },
   {
     year: '2020',
@@ -137,6 +138,21 @@ export const career: CareerEntry[] = [
       '自由が丘の実店舗の立ち上げと運営管理にも携わる。',
     ],
     skills: ['EC', '輸入業務', '店舗運営'],
+  },
+  {
+    year: '2022',
+    title: '音楽系 Web サービスの受託開発',
+    description: ['アーティストやジャンルを軸にしたコミュニティ型 Web サービスの開発進行を担当。フロントエンドは Nuxt、バックエンドは Laravel で構築。'],
+    skills: ['Nuxt.js', 'Laravel', 'Docker', '開発進行'],
+  },
+  {
+    year: '2024',
+    title: '歯科医院経営の学習プラットフォームを受託開発',
+    description: [
+      '歯科医師・歯科医院経営者向けに、動画・記事・マンガで経営ノウハウを学べる会員制オンライン学習サービスを開発。',
+      '会員登録、動画視聴、セミナー申し込み、学習履歴の管理などを実装。',
+    ],
+    skills: ['Next.js', 'NestJS', 'TypeScript'],
   },
   {
     year: '2025',
