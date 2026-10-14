@@ -15,7 +15,7 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
         <h2 className="text-2xl font-bold tracking-tight">Career</h2>
         <p className="mt-1 text-sm text-muted-foreground">これまでの仕事。</p>
         <p className="mt-1 text-xs leading-relaxed text-muted-foreground/80">
-          Placia: Web 制作・システム開発(2018〜 取締役) / 沁透: CBD オイルの輸入販売(2022〜 取締役) / 頭文字のみの社名は業務委託先
+          Placia（株式会社Placia）: Web制作・システム開発、2018〜取締役 / 沁透（株式会社沁透）: CBDオイルの輸入販売、2022〜取締役 / 頭文字のみの社名は業務委託先
         </p>
       </motion.div>
 
