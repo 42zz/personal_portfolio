@@ -13,7 +13,7 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
         className="mb-6 px-1"
       >
         <h2 className="text-2xl font-bold tracking-tight">Career</h2>
-        <p className="mt-1 text-sm text-muted-foreground">これまでの経歴です。</p>
+        <p className="mt-1 text-sm text-muted-foreground">これまでの仕事。</p>
       </motion.div>
 
       <ol className="relative ml-3 border-l border-border/80 pl-7">
