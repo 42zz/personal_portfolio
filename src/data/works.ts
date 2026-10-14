@@ -83,7 +83,6 @@ export const career: CareerEntry[] = [
     title: 'フリーランス Web エンジニアとして活動開始',
     description: [
       '大学在学中に Web 制作のコーディングや WordPress のテーマ開発を受託。',
-      '低予算・短納期の案件を数多くこなし、継続して依頼をもらえる関係を築く。',
     ],
     tags: ['HTML/CSS', 'JavaScript', 'PHP', 'WordPress'],
   },
