@@ -93,7 +93,7 @@ export const career: CareerEntry[] = [
   {
     year: '2016',
     period: '2016〜2017',
-    affiliation: 'フリーランス / SM社・デジタルコンテンツマネージャー / SJ社・ディレクター',
+    affiliation: 'フリーランス / SM社・コンテンツマネージャー / SJ社・ディレクター',
     title: 'オーストラリアへ',
     description: [
       'メルボルン、ブリスベン、シドニー、アデレードと東海岸を中心に拠点を移しながら、フリーランスの Web エンジニアとして活動。',

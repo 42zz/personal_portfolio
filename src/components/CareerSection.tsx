@@ -23,7 +23,7 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
         {entries.map((e, i) => (
           <motion.li
             key={`${e.year}-${i}`}
-            className="relative pb-9 last:pb-0"
+            className="relative pb-8 last:pb-0"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -32,29 +32,31 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
             <span className="absolute -left-[35px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-background ring-1 ring-border">
               <span className="h-2 w-2 rounded-full bg-foreground" />
             </span>
-            <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-              <time className="text-xs font-semibold tracking-wider text-muted-foreground">{e.period ?? e.year}</time>
-              {e.affiliation.split(' / ').map((a) => (
-                <span key={a} className="rounded-full border border-border bg-background/70 px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
-                  {a}
-                </span>
-              ))}
-            </div>
+            <time className="text-xs font-semibold tracking-wider text-muted-foreground">{e.period ?? e.year}</time>
             <div className="mt-1.5 rounded-2xl glass-card p-4">
               <h3 className="text-[15px] font-semibold leading-snug tracking-tight">{e.title}</h3>
-              <div className="mt-2 space-y-1 text-sm leading-relaxed text-foreground/80">
+              <ul className="mt-1.5 space-y-0.5">
+                {e.affiliation.split(' / ').map((a) => (
+                  <li key={a} className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                    <span aria-hidden="true" className="h-1 w-1 shrink-0 rounded-full bg-muted-foreground/60" />
+                    {a}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-3 space-y-1 text-sm leading-relaxed text-foreground/80">
                 {e.description.map((line, j) => (
                   <p key={j}>{line}</p>
                 ))}
               </div>
               {e.skills && e.skills.length > 0 && (
-                <div className="mt-3 flex flex-wrap items-center gap-1.5">
-                  <span className="mr-1 text-[11px] font-semibold tracking-wider text-muted-foreground/70">SKILLS</span>
-                  {e.skills.map((t) => (
-                    <span key={t} className="rounded-full bg-secondary px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
-                      {t}
-                    </span>
-                  ))}
+                <div className="mt-3 border-t border-border/60 pt-3">
+                  <div className="flex flex-wrap gap-1.5">
+                    {e.skills.map((t) => (
+                      <span key={t} className="rounded-full bg-secondary px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
