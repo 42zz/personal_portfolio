@@ -93,7 +93,7 @@ export const career: CareerEntry[] = [
   {
     year: '2016',
     period: '2016〜2017',
-    affiliation: 'フリーランス',
+    affiliation: 'フリーランス / SM社・業務委託 / SJ社・ディレクター',
     title: 'オーストラリアへ',
     description: [
       'メルボルン、ブリスベン、シドニー、アデレードと東海岸を中心に拠点を移しながら、フリーランスの Web エンジニアとして活動。',
@@ -104,7 +104,7 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2017',
-    affiliation: '業務委託',
+    affiliation: '業務委託・開発責任者',
     title: 'SNS サービスの開発責任者',
     description: [
       '帰国後、新規 SNS サービスの開発に開発責任者として参画。',
@@ -115,7 +115,7 @@ export const career: CareerEntry[] = [
   {
     year: '2018',
     period: '2018〜',
-    affiliation: '自社 A ・ 取締役',
+    affiliation: 'P社・取締役(共同創業)',
     title: 'Web 制作・システム開発の会社を共同創業',
     description: [
       '取締役として、技術選定からインフラ構築まで開発全般を担当。',
@@ -127,7 +127,7 @@ export const career: CareerEntry[] = [
   {
     year: '2020',
     period: '2020〜2022',
-    affiliation: '業務委託',
+    affiliation: 'B社・業務委託',
     title: 'Web 制作会社のテクニカルディレクター',
     description: ['業務委託で、WordPress テーマの開発と、海外の開発者と代表の間のやりとりを担当。'],
     skills: ['WordPress', 'English'],
@@ -135,7 +135,7 @@ export const career: CareerEntry[] = [
   {
     year: '2021',
     period: '2021〜2023',
-    affiliation: '業務委託',
+    affiliation: 'N社・業務委託',
     title: 'システム開発会社のテクニカルディレクター',
     description: [
       '業務委託で、Web 開発プロジェクトのプロジェクトマネージャーとディレクターを担当。',
@@ -147,7 +147,7 @@ export const career: CareerEntry[] = [
   {
     year: '2022',
     period: '2022〜',
-    affiliation: '自社 B ・ 取締役',
+    affiliation: 'S社・取締役(共同創業)',
     title: '輸入販売の会社を共同創業',
     description: [
       '取締役として、米国からの健康食品の輸入と総代理店事業を立ち上げ。',
@@ -158,21 +158,21 @@ export const career: CareerEntry[] = [
   },
   {
     year: '2022',
-    affiliation: '自社 A の受託案件',
+    affiliation: 'P社・受託案件',
     title: 'コミュニティ型 Web サービスの受託開発',
     description: ['会員向け Web サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
     skills: ['要件定義', '技術選定', 'Nuxt.js', 'Laravel', 'Docker'],
   },
   {
     year: '2024',
-    affiliation: '自社 A の受託案件',
+    affiliation: 'P社・受託案件',
     title: '会員制オンライン学習サービスの受託開発',
     description: ['動画や記事で学べる会員制の学習サービスを、要件定義・技術選定からフロントエンド・バックエンドの実装まで一人で担当。'],
     skills: ['要件定義', '技術選定', 'Next.js', 'NestJS', 'TypeScript'],
   },
   {
     year: '2025',
-    affiliation: '自社 A ・ 業務委託',
+    affiliation: 'P社・自社サービス / M社・業務委託',
     title: 'AI を使った自社サービスの企画・開発',
     description: [
       '小規模事業者向けに、入力した事業情報から AI がマーケティング分析レポートを作るサービスを企画・開発。',
@@ -183,7 +183,7 @@ export const career: CareerEntry[] = [
   {
     year: '2026',
     period: '2026〜',
-    affiliation: '自社 A ・ 個人開発',
+    affiliation: 'P社・自社サービス / 個人開発',
     title: '飲食店向けの自社サービスと、個人アプリの開発',
     description: [
       '飲食店を起点に、小規模事業者がテンプレートと選択式の設定でホームページを作り、公開・運用できるサービスを開発。',

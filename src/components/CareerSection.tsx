@@ -13,7 +13,10 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
         className="mb-6 px-1"
       >
         <h2 className="text-2xl font-bold tracking-tight">Career</h2>
-        <p className="mt-1 text-sm text-muted-foreground">これまでの仕事。自社 A は Web 制作・システム開発の会社、自社 B は輸入販売の会社。</p>
+        <p className="mt-1 text-sm text-muted-foreground">これまでの仕事。社名は頭文字で表記。</p>
+        <p className="mt-1 text-xs leading-relaxed text-muted-foreground/80">
+          P社: 共同創業した Web 制作・システム開発会社(2018〜 取締役) / S社: 共同創業した輸入販売会社(2022〜 取締役) / そのほかは業務委託先
+        </p>
       </motion.div>
 
       <ol className="relative ml-3 border-l border-border/80 pl-7">
@@ -31,9 +34,11 @@ const CareerSection: React.FC<{ id: string; entries: CareerEntry[] }> = ({ id, e
             </span>
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
               <time className="text-xs font-semibold tracking-wider text-muted-foreground">{e.period ?? e.year}</time>
-              <span className="rounded-full border border-border bg-background/70 px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
-                {e.affiliation}
-              </span>
+              {e.affiliation.split(' / ').map((a) => (
+                <span key={a} className="rounded-full border border-border bg-background/70 px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
+                  {a}
+                </span>
+              ))}
             </div>
             <div className="mt-1.5 rounded-2xl glass-card p-4">
               <h3 className="text-[15px] font-semibold leading-snug tracking-tight">{e.title}</h3>
