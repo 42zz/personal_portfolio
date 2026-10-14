@@ -4,7 +4,7 @@ import WorkCard from '@/components/WorkCard';
 import type { WorkGroup } from '@/data/works';
 
 const WorkSection: React.FC<{ id: string; groups: WorkGroup[] }> = ({ id, groups }) => (
-  <section id={id} className="min-h-screen snap-start flex items-center justify-center px-5 py-24">
+  <section id={id} className="min-h-screen flex items-center justify-center px-5 py-24">
     <div className="w-full max-w-md space-y-10">
       {groups.map((g) => (
         <div key={g.title}>

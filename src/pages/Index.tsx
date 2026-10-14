@@ -20,8 +20,8 @@ const Index = () => {
       <AnimatedBackground />
       <Nav items={navItems} />
 
-      <main className="h-screen overflow-y-auto snap-y snap-proximity scroll-smooth">
-        <section id="social" className="min-h-screen snap-start flex items-center justify-center px-5 py-24">
+      <main>
+        <section id="social" className="min-h-screen flex items-center justify-center px-5 py-24">
           <div className="w-full max-w-md">
             <ProfileCard name="Masaya Kawai" avatarUrl="/me.jpg" className="mb-8" />
             <div className="space-y-3">
@@ -42,7 +42,7 @@ const Index = () => {
         <WorkSection id="apps" groups={workGroups} />
         <CareerSection id="career" entries={career} />
 
-        <footer className="snap-end py-6 text-center text-xs text-muted-foreground">
+        <footer className="py-6 text-center text-xs text-muted-foreground">
           <p className="opacity-60">&copy; {new Date().getFullYear()} masayakawai.com</p>
         </footer>
       </main>
