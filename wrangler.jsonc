@@ -1,7 +1,17 @@
 {
   "name": "masayakawai",
+  "main": "worker/index.ts",
   "compatibility_date": "2025-03-23",
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // /api/* は静的アセットより先に Worker で処理する
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": { "enabled": true },
+  // 変数はダッシュボードで設定する。デプロイで上書きしないよう keep_vars を有効にしている
+  //   変数: CONTACT_TO(受信先), CONTACT_FROM(送信元)
+  //   シークレット: TURNSTILE_SECRET_KEY, RESEND_API_KEY
+  "keep_vars": true
 }

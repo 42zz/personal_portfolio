@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Facebook, Github } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import type { Social } from '@/data/works';
+import type { Social } from '@/data/socials';
 
 const XIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
