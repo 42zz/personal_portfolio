@@ -6,11 +6,9 @@ import ContactForm from '@/components/ContactForm';
 import Nav from '@/components/Nav';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import { socials } from '@/data/socials';
+import { CONTACT_ENABLED } from '@/lib/contact';
 
-const navItems = [
-  { id: 'social', label: 'Social' },
-  { id: 'contact', label: 'Contact' },
-];
+const navItems = [{ id: 'social', label: 'Social' }, ...(CONTACT_ENABLED ? [{ id: 'contact', label: 'Contact' }] : [])];
 
 const Index = () => {
   return (
@@ -37,28 +35,30 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="contact" className="min-h-screen flex items-center justify-center px-5 py-24">
-          <div className="w-full max-w-md">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.4 }}
-              className="mb-6 px-1"
-            >
-              <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
-              <p className="mt-1 text-sm text-muted-foreground">お仕事のご相談などはこちらから。</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.45, delay: 0.1 }}
-            >
-              <ContactForm />
-            </motion.div>
-          </div>
-        </section>
+        {CONTACT_ENABLED && (
+          <section id="contact" className="min-h-screen flex items-center justify-center px-5 py-24">
+            <div className="w-full max-w-md">
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.4 }}
+                className="mb-6 px-1"
+              >
+                <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
+                <p className="mt-1 text-sm text-muted-foreground">お仕事のご相談などはこちらから。</p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.45, delay: 0.1 }}
+              >
+                <ContactForm />
+              </motion.div>
+            </div>
+          </section>
+        )}
 
         <footer className="py-6 text-center text-xs text-muted-foreground">
           <p className="opacity-60">&copy; {new Date().getFullYear()} masayakawai.com</p>

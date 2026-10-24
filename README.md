@@ -24,6 +24,8 @@ npx wrangler deploy
 
 トップページは SNS リンクとお問い合わせフォームだけの構成です。フォームの送信先 `/api/contact` は `worker/index.ts` の Worker が受け、Cloudflare Turnstile のトークンを検証してから Resend でメールを送ります。
 
+`VITE_TURNSTILE_SITE_KEY` を設定せずにビルドすると、お問い合わせ欄とナビの「Contact」は表示されません。下の設定が済むまではこの状態で公開できます。
+
 ### 本番の設定
 
 1. Cloudflare のダッシュボードで Turnstile のウィジェットを作り、ホスト名に `42zz.net` と `masayakawai.com` を登録する

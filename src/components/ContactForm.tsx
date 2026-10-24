@@ -3,11 +3,7 @@ import { motion } from 'framer-motion';
 import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 import { Loader2, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
-
-// Turnstile のサイトキー。本番ではビルド時に VITE_TURNSTILE_SITE_KEY を渡す。
-// 未設定の開発環境では Cloudflare のテスト用キー(常に成功)を使う。
-const SITE_KEY =
-  import.meta.env.VITE_TURNSTILE_SITE_KEY || (import.meta.env.DEV ? '1x00000000000000000000AA' : '');
+import { TURNSTILE_SITE_KEY as SITE_KEY } from '@/lib/contact';
 
 type Status = 'idle' | 'sending' | 'sent' | 'error';
 
